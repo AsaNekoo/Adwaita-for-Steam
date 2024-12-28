@@ -1,64 +1,80 @@
-/* ------------------------------- */
-/* --- Show QR Login on Hover  --- */
-/* ------------------------------- */
-body.DesktopUI .login_Login_VZ6x_ [class*="qrlogin_Column_"]
+/* Show QR Login on Hover */
+body.DesktopUI .VZ6x_grhNkIYJG__jEEyp
 {
-	box-shadow: 0px 0px 16px 8px black !important;
-	border-radius: var(--popover_radius) !important;
-	left: 50% !important;
-	opacity: 0 !important;
-	position: absolute !important;
-	top: 50% !important;
-	transform: translate(-50%, -50%) !important;
-	transition: visibility 200ms linear, opacity 200ms linear !important;
-	visibility: hidden !important;
-}
+	._2u8B99t9Tx_uGgP58AcGYT
+	{
+		box-shadow: 0 0 16px 8px black !important;
+		border-radius: var(--adw-card-radius) !important;
+		left: 50% !important;
+		opacity: 0 !important;
+		position: absolute !important;
+		top: 50% !important;
+		transform: translate(-50%, -50%) !important;
+		transition: visibility 200ms linear, opacity 200ms linear !important;
+		visibility: hidden !important;
+	}
 
-body.DesktopUI .login_Login_VZ6x_ [class*="qrlogin_LoginQR_"]
-{
-	border-radius: var(--popover_radius) !important;
-	width: 250px !important;
-	height: 250px !important;
-}
+	.xlEVpBeYO1h2tOqErt9fj
+	{
+		border-radius: var(--adw-card-radius) !important;
+		width: 250px !important;
+		height: 250px !important;
+	}
 
-body.DesktopUI .login_Login_VZ6x_ [class*="newlogindialog_QRSection_"]
-{
-	margin-left: 0 !important;
-}
+	._3wSeH3OorL-tMzwXL55smN
+	{
+		margin-left: 0 !important;
+	}
 
-body.DesktopUI .login_Login_VZ6x_ [class*="newlogindialog_QRCodeContainer_"] [class*="newlogindialog_FieldLabel_"]
-{
-	display: none !important;
-}
+	._3ToZQDL9M9IP5o2tIhKLxH
+	{
+		display: flex !important;
+		justify-content: center !important;
 
-body.DesktopUI .login_Login_VZ6x_ [class*="newlogindialog_QRCodeContainer_"] [class*="newlogindialog_UseMobileAppForQR_"]
-{
-	align-self: center !important;
-}
+		.XrYgea66b38RASmbI3PJo
+		{
+			display: none !important;
+		}
 
-body.DesktopUI .login_Login_VZ6x_ [class*="newlogindialog_QRCodeContainer_"] [class*="newlogindialog_UseMobileAppForQR_"]::after
-{
-	content: ". Hover to view QR code" !important;
-	font-weight: 700 !important;
-}
+		._3pxTSyPhDmjNqXUYDIITS-
+		{
+			align-self: center !important;
 
-body.DesktopUI .login_Login_VZ6x_ [class*="newlogindialog_QRCodeContainer_"] [class*="newlogindialog_UseMobileAppForQR_"] a
-{
-	visibility: visible !important;
-}
+			&::after
+			{
+				content: ". Hover to view QR code" !important;
+				font-weight: 700 !important;
+			}
 
-body.DesktopUI .login_Login_VZ6x_ [class*="newlogindialog_QRCodeContainer_"]:hover [class*="newlogindialog_QR_"] [class*="qrlogin_Column_"]
-{
-	visibility: visible !important;
-	opacity: 1 !important;
-}
+			a
+			{
+				visibility: visible !important;
+			}
+		}
 
-body.DesktopUI .login_Login_VZ6x_ [class*="newlogindialog_Login_"] [class*="newlogindialog_SideBySide_"]
-{
-	flex-direction: column !important;
-}
+		&:hover
+		{
+			._35Q-UW9L8wv2fkImoWScgQ ._2u8B99t9Tx_uGgP58AcGYT
+			{
+				visibility: visible !important;
+				opacity: 1 !important;
+				z-index: 10 !important;
+			}
+		}
+	}
 
-body.DesktopUI .login_Login_VZ6x_ [class*="newlogindialog_LoginForm_"]
-{
-	width: 100% !important;
+	.ZHRZ8czyqs7NaNmv65ARI
+	{
+		flex-direction: column !important;
+	}
+
+	._2v60tM463fW0V7GDe92E5f
+	{
+		width: 100% !important;
+	}
+
+	._3pxTSyPhDmjNqXUYDIITS-, ._35Q-UW9L8wv2fkImoWScgQ
+	{
+		-webkit-app-region: no-drag !important;
+	}
 }

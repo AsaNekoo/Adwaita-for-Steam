@@ -1,7 +1,7 @@
 {
     "name": "Adwaita for Steam",
     "author": "tk",
-    "version": "v1.16",
+    "version": "v3.1",
     "manifest_version": 8,
     "description": "A skin to make Steam look more like a native GNOME app",
     "target": "Desktop",
@@ -9,43 +9,56 @@
         "all": ["Steam|SteamLibraryWindow", "desktopchat", "desktopcontextmenu", "desktopoverlay"]
     },
     "inject": {
-        "adwaita/variants/base/_root.css": ["all"],
-        "adwaita/variants/base/_fonts.css": ["all"],
-        "adwaita/variants/base/_localization.css": ["all"],
-        "adwaita/variants/base/scrollbars.css": ["all"],
-        "adwaita/variants/base/main_window/headerbar/headerbar.css": ["all"],
-        "adwaita/variants/base/main_window/headerbar/buttons.css": ["all"],
-        "adwaita/variants/base/main_window/headerbar/navigation.css": ["all"],
-        "adwaita/variants/base/main_window/headerbar/menu.css": ["all"],
-        "adwaita/variants/base/library.css": ["all"],
-        "adwaita/variants/full/library.css": ["all"],
-        "adwaita/variants/base/game_details.css": ["all"],
-        "adwaita/variants/full/game_details.css": ["all"],
-        "adwaita/variants/base/downloads.css": ["all"],
-        "adwaita/variants/full/downloads.css": ["all"],
-        "adwaita/variants/base/collections.css": ["all"],
-        "adwaita/variants/base/dialogs/_dialogs.css": ["all"],
-        "adwaita/variants/base/dialogs/launch_options.css": ["all"],
-        "adwaita/variants/base/dialogs/login.css": ["all"],
-        "adwaita/variants/full/dialogs/_dialogs.css": ["all"],
-        "adwaita/variants/full/dialogs/about_steam.css": ["all"],
-        "adwaita/variants/full/dialogs/add_game.css": ["all"],
-        "adwaita/variants/full/dialogs/app_properties.css": ["all"],
-        "adwaita/variants/full/dialogs/content_management.css": ["all"],
-        "adwaita/variants/full/dialogs/install_game.css": ["all"],
-        "adwaita/variants/full/dialogs/paged_settings.css": ["all"],
-        "adwaita/variants/full/dialogs/product_activation.css": ["all"],
-        "adwaita/variants/full/dialogs/recent_players.css": ["all"],
-        "adwaita/variants/full/dialogs/screenshots.css": ["all"],
-        "adwaita/variants/full/dialogs/server_browser.css": ["all"],
-        "adwaita/variants/full/dialogs/steam_settings.css": ["all"],
-        "adwaita/variants/full/dialogs/system_information.css": ["all"],
-        "adwaita/variants/full/dialogs/uninstall.css": ["all"],
-        "adwaita/variants/full/dialogs/update_news.css": ["all"],
-        "adwaita/variants/full/dialogs/whats_new.css": ["all"],
-        "adwaita/variants/base/game_overlay.css": ["all"],
-        "adwaita/variants/base/notifications.css": ["all"],
-        "adwaita/variants/full/chat.css": ["all"]
+        "adwaita/css/_root/colors.css": ["all"],
+        "adwaita/css/_root/icons.css": ["all"],
+        "adwaita/css/_root/localization.css": ["all"],
+        "adwaita/css/_root/opacity.css": ["all"],
+        "adwaita/css/_root/text.css": ["all"],
+        "adwaita/css/_root/variables.css": ["all"],
+
+        "adwaita/css/chat/chat.css": ["all"],
+        "adwaita/css/chat/messages.css": ["all"],
+        "adwaita/css/chat/sidebar.css": ["all"],
+
+        "adwaita/css/dialogs/pagedsettings/dialog.css": ["all"],
+        "adwaita/css/dialogs/pagedsettings/rows.css": ["all"],
+        "adwaita/css/dialogs/appproperties.css": ["all"],
+        "adwaita/css/dialogs/login.css": ["all"],
+        "adwaita/css/dialogs/settings.css": ["all"],
+
+        "adwaita/css/main/headerbar/buttons.css": ["all"],
+        "adwaita/css/main/headerbar/headerbar.css": ["all"],
+        "adwaita/css/main/headerbar/menu.css": ["all"],
+        "adwaita/css/main/headerbar/navigation.css": ["all"],
+
+        "adwaita/css/main/library/details/header.css": ["all"],
+        "adwaita/css/main/library/details/activity.css": ["all"],
+        "adwaita/css/main/library/details/details.css": ["all"],
+        "adwaita/css/main/library/details/event-dialog.css": ["all"],
+
+        "adwaita/css/main/library/home/game-card.css": ["all"],
+        "adwaita/css/main/library/home/home.css": ["all"],
+        "adwaita/css/main/library/home/news.css": ["all"],
+
+        "adwaita/css/main/library/sidebar/gamelist.css": ["all"],
+        "adwaita/css/main/library/sidebar/sidebar.css": ["all"],
+
+        "adwaita/css/main/library/collections/collections.css": ["all"],
+
+        "adwaita/css/main/library/downloads/downloads.css": ["all"],
+
+        "adwaita/css/main/library/library.css": ["all"],
+
+        "adwaita/css/widgets/avatars.css": ["all"],
+        "adwaita/css/widgets/buttons.css": ["all"],
+        "adwaita/css/widgets/cards.css": ["all"],
+        "adwaita/css/widgets/checkboxes.css": ["all"],
+        "adwaita/css/widgets/dialogs.css": ["all"],
+        "adwaita/css/widgets/entries.css": ["all"],
+        "adwaita/css/widgets/lists.css": ["all"],
+        "adwaita/css/widgets/popups.css": ["all"],
+        "adwaita/css/widgets/scrollbars.css": ["all"],
+        "adwaita/css/widgets/windowcontrols.css": ["all"]
     },
     "patches": {
         "Color Theme": {
@@ -58,6 +71,7 @@
                 "catppuccin-macchiato": { "adwaita/colorthemes/catppuccin-macchiato/catppuccin-macchiato.css": ["all"] },
                 "catppuccin-mocha": { "adwaita/colorthemes/catppuccin-mocha/catppuccin-mocha.css": ["all"] },
                 "dracula": { "adwaita/colorthemes/dracula/dracula.css": ["all"] },
+                "everforest": { "adwaita/colorthemes/everforest/everforest.css": ["all"] },
                 "gruvbox": { "adwaita/colorthemes/gruvbox/gruvbox.css": ["all"] },
                 "kate": { "adwaita/colorthemes/kate/kate.css": ["all"] },
                 "metro": { "adwaita/colorthemes/metro/metro.css": ["all"] },
@@ -69,6 +83,14 @@
                 "vapor": { "adwaita/colorthemes/vapor/vapor.css": ["all"] },
                 "vgui2": { "adwaita/colorthemes/vgui2/vgui2.css": ["all"] },
                 "yaru": { "adwaita/colorthemes/yaru/yaru.css": ["all"] }
+            }
+        },
+        "Window Controls Theme": {
+            "type":  "dropdown",
+            "values": {
+                "adwaita": { "adwaita/windowcontrols/adwaita.css": ["all"] },
+                "macos": { "adwaita/windowcontrols/macos.css": ["all"] },
+                "windows": { "adwaita/windowcontrols/windows.css": ["all"] }
             }
         },
         "Rounded Corners": {
@@ -107,27 +129,6 @@
                 },
                 "Hide": {
                     "adwaita/extras/login/hide_qr.css": ["all"]
-                }
-            }
-        },
-        "Window Controls": {
-            "type": "dropdown",
-            "values": {
-                "Default": {},
-                "Dots": {
-                    "adwaita/extras/windowcontrols/dots.css": ["all"]
-                },
-                "Hide Close": {
-                    "adwaita/extras/windowcontrols/hide-close.css": ["all"]
-                },
-                "Left All": {
-                    "adwaita/extras/windowcontrols/left-all.css": ["all"]
-                },
-                "Left": {
-                    "adwaita/extras/windowcontrols/left.css": ["all"]
-                },
-                "Right All": {
-                    "adwaita/extras/windowcontrols/right-all.css": ["all"]
                 }
             }
         },
